@@ -1,0 +1,18 @@
+{
+  "name": "ovhtask-js",
+  "version": "1.0.0",
+  "description": "Extract & get every news tasks & events from OVH official tasks platform",
+  "main": "lib/task-provider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gclem",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "feedparser": "^2.1.0",
+    "lodash": "^4.17.4",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  }
+}
