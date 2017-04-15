@@ -1,6 +1,6 @@
 {
   "name": "ovhtask-js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Extract & get every news tasks & events from OVH official tasks platform",
   "main": "lib/task-provider.js",
   "scripts": {
