@@ -12,16 +12,16 @@ console.log("OVH Task CLI Importer.");
  //// All 
 if (program.all) {
     importer.importAll({ withDetails : false })
-        .then((datas) => { console.log('%s items imported.', datas.length); })
-        .catch((err) => { console.error('Full imported faulted', err); });
+        .then((datas) => { console.log('%s items imported.', datas.length); process.exit(0); })
+        .catch((err) => { console.error('Full imported faulted', err); process.exit(1); });
 }
 
 //// Refresh
 if (program.refresh) {
     importer
         .import(0, 200, { withDetails : true })
-        .then((datas) => { console.log('Refreshed. %s items imported.', datas.length); })
-        .catch((err) => { console.error('Refresh faulted', err); });
+        .then((datas) => { console.log('Refreshed. %s items imported.', datas.length); process.exit(0); })
+        .catch((err) => { console.error('Refresh faulted', err); process.exit(1); });
 }
 
 
