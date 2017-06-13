@@ -7,7 +7,7 @@ menu.reset();
 menu.write('OVH Task JS - Samples \n');
 menu.write('-------------------------\n');
 
-menu.add('Get last 55 tasks');
+menu.add('Get last 100 tasks');
 menu.add('Get all tasks from all projects');
 menu.add('Get categories');
 menu.add('Exit');
@@ -17,7 +17,7 @@ menu.on('select', function (label, index) {
 
     switch(index){
         case 0 : 
-            scrapper.list(0,55).then(console.log);
+            scrapper.list(0,{ from : 1, to : 2}).then(console.log);
             break;
         case 1 :
             scrapper.list(0).then(console.log);

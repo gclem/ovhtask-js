@@ -16,10 +16,10 @@ menu.on('select', function (label, index) {
 
     switch(index){
         case 0 : 
-            importer.importAll({ withDetails : false }).then(console.log);
+            importer.importAll({ withDetails : false }).then(d => console.log(d[0].length + " items imported."));
             break;
         case 1 : 
-            importer.import(0, 100, { withDetails : true }).then(console.log);
+            importer.import(0, { to : 2, withDetails : true }).then(d => console.log(d[0].length + " items imported."));
             break;
     }
 });
