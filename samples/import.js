@@ -19,7 +19,7 @@ menu.on('select', function (label, index) {
             importer.importAll({ withDetails : false }).then(console.log);
             break;
         case 1 : 
-            importer.import(0, 100, { withDetails : false }).then(console.log);
+            importer.import(0, 100, { withDetails : true }).then(console.log);
             break;
     }
 });

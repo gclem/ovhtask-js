@@ -8,6 +8,7 @@ menu.write('OVH Task JS - Importer Tools \n');
 menu.write('-------------------------\n');
 
 menu.add('Listen for activities');
+menu.add('Last 100 updates');
 menu.add('Exit');
 
 menu.on('select', function (label, index) {
@@ -19,6 +20,10 @@ menu.on('select', function (label, index) {
             feed.on('new', (data) => { console.log("New data")} )
             feed.on('update', (old, data) => { console.log("Updated")} )
             feed.on('delete', (data) => { console.log("Deleted")} )
+            break;
+        case 1 : 
+            feed.last(10)
+                .then(console.log);
             break;
     }
 });

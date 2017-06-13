@@ -16,6 +16,8 @@
     "commander": "^2.9.0",
     "feedparser": "^2.1.0",
     "lodash": "^4.17.4",
+    "md5": "^2.2.1",
+    "object-hash": "^1.1.8",
     "request": "^2.79.0",
     "request-promise": "^4.1.1",
     "terminal-menu": "^2.1.1",
