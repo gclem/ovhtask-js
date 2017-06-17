@@ -19,7 +19,7 @@ if (program.all) {
 //// Refresh
 if (program.refresh) {
     importer
-        .import(0, 200, { withDetails : true })
+        .import(0, { from : 1, to : 3, withDetails : true })
         .then((datas) => { console.log('Refreshed. %s items imported.', datas.length); process.exit(0); })
         .catch((err) => { console.error('Refresh faulted', err); process.exit(1); });
 }
